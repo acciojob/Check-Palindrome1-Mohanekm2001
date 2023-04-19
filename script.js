@@ -1,6 +1,7 @@
-// complete the given function
-
-function palindrome(str){
-
+function isPalindrome(s) {
+  // Remove all non-alphanumeric characters and convert to lowercase
+  s = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  
+  // Check if the string is equal to its reverse
+  return s === s.split("").reverse().join("");
 }
-module.exports = palindrome
